@@ -4,15 +4,23 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="@color/colorPrimary"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="wrap_content">
         <TextView
-            android:text="Hi Developer"
-            android:textColor="@android:color/white"
-            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="Please add your Height"
             android:gravity="center"
+            android:id="@+id/tvHeading"
+            android:textColor="@android:color/white"
             android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/etValue"
+            android:layout_margin="16dp"
+            android:inputType="number"
+            android:hint="Height in cm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
